@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
   border: 0 solid;
+  line-height: 1.7rem;
 }
 
 [hidden] {
