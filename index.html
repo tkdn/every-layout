@@ -1,65 +1,117 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link
-      rel="stylesheet"
-      href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css"
-    />
-  </head>
 
-  <body>
-    <div class="section">
-      <stack-l recursive="true">
-        <h2>Title is "Stack"</h2>
-        <img src="https://picsum.photos/id/237/300/200" />
-        <p>
-          あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。
-        </p>
-        <div>
-          <p>
-            あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
-          </p>
-          <p>
-            あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
-          </p>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+</head>
+
+<body>
+  <div class="section">
+    <cluster-l justify="space-between" align="center">
+      <box-l invert>logo</box-l>
+      <cluster-l role="list" space="var(--s-1)">
+        <div role="listitem"><a href="https://every-layout.dev/demos/cluster-ctas/">About</a></div>
+        <div role="listitem"><a href="https://every-layout.dev/demos/cluster-header/">Products</a></div>
+        <div role="listitem">Contact</div>
+      </cluster-l>
+    </cluster-l>
+  </div>
+
+  <div class="section">
+    <stack-l>
+      <h2>Center</h2>
+      <box-l>
+        <center-l>
+          <stack-l>
+            <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+            <p>Sidebar, Cover をやってからサンプルを適用してみる</p>
+          </stack-l>
+        </center-l>
+      </box-l>
+    </stack-l>
+  </div>
+
+  <div class="section">
+    <stack-l>
+      <h2>Composition Box</h2>
+      <box-l padding="0">
+        <box-l invert borderWidth="0">
+          <h3>Box Header</h3>
+        </box-l>
+        <box-l borderWidth="0">
+          <p>Box Content. あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+        </box-l>
+      </box-l>
+    </stack-l>
+  </div>
+  <div class="section">
+    <stack-l>
+      <h2>Box</h2>
+      <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+      <box-l>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quod quidem? Sapiente quo repudiandae,
+          quae eaque placeat animi optio illo? Maxime laboriosam nemo magnam iste quis a voluptate temporibus esse?
         </div>
-      </stack-l>
-    </div>
-    <div class="section" style="display: flex; flex-wrap: wrap; gap: var(--s1)">
-      <stack-l splitAfter="2" style="flex-grow: 1">
-        <div style="background: #ccc; height: 100px; width: 20vw"></div>
-        <div style="background: #ccc; height: 60px">
-          <code>margin-block-end: auto;</code>
-        </div>
-        <div style="background: #ccc; height: 40px"></div>
-      </stack-l>
-      <stack-l style="flex-basis: 0; flex-grow: 999; min-inline-size: 66.666%">
-        <p>
-          <img src="https://picsum.photos/id/237/300/200" />
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-          voluptatum aliquam sit perferendis ut similique voluptatem veniam
-          provident cum officiis repudiandae, quo odio dolorum velit nobis
-          possimus ratione placeat asperiores.
-        </p>
-      </stack-l>
-    </div>
-    <div class="section">
-      <stack-l space="1.5rem">
+      </box-l>
+      <p>
+        あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。
+      </p>
+    </stack-l>
+  </div>
+
+  <div class="section">
+    <stack-l recursive="true">
+      <h2>Title is "Stack"</h2>
+      <img src="https://picsum.photos/id/237/300/200" />
+      <p>
+        あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。
+      </p>
+      <div>
         <p>
           あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
         </p>
         <p>
-          あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。
+          あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
         </p>
-      </stack-l>
-    </div>
+      </div>
+    </stack-l>
+  </div>
+  <div class="section" style="display: flex; flex-wrap: wrap; gap: var(--s1)">
+    <stack-l splitAfter="2" style="flex-grow: 1">
+      <div style="background: #ccc; height: 100px; width: 20vw"></div>
+      <div style="background: #ccc; height: 60px">
+        <code>margin-block-end: auto;</code>
+      </div>
+      <div style="background: #ccc; height: 40px"></div>
+    </stack-l>
+    <stack-l style="flex-basis: 0; flex-grow: 999; min-inline-size: 66.666%">
+      <p>
+        <img src="https://picsum.photos/id/237/300/200" />
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+        voluptatum aliquam sit perferendis ut similique voluptatem veniam
+        provident cum officiis repudiandae, quo odio dolorum velit nobis
+        possimus ratione placeat asperiores.
+      </p>
+    </stack-l>
+  </div>
+  <div class="section">
+    <stack-l space="1.5rem">
+      <p>
+        あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+      </p>
+      <p>
+        あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。
+      </p>
+    </stack-l>
+  </div>
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

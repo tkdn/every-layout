@@ -11,6 +11,16 @@
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
+
+  --measure: 65ch;
+
+  --color-dark: #050505;
+  --color-darkish: #404040;
+  --color-lightish: #e6e6e6;
+  --color-light: #fafafa;
+  --color-mid: grey;
+
+  --border-thin: var(--s-5);
 }
 
 *,
